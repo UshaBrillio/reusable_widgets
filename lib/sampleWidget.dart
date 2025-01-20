@@ -1,12 +1,13 @@
 
 library reusable_widgets;
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyStatefulWidget extends StatefulWidget {
+  const MyStatefulWidget({super.key});
+
   @override
-  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
