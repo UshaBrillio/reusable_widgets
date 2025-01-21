@@ -13,11 +13,14 @@ class SingleContentScreen extends StatefulWidget {
   const SingleContentScreen(
       {Key? key,
       required this.contentLink,
-      this.webLink = "",
+        required this.title,
+        this.webLink = "",
       this.liveSessionType = ""})
       : super(key: key);
 
   final String contentLink;
+  final String title;
+
   final String webLink;
   final String liveSessionType;
 
@@ -65,7 +68,7 @@ class _SingleContentScreenState extends State<SingleContentScreen> {
   }
 
   String _getTitle() {
-    return AppString.contactUs;
+    return widget.title;
 
   }
 
