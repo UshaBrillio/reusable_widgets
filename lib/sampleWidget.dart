@@ -4,7 +4,10 @@ library reusable_widgets;
 import 'package:flutter/material.dart';
 
 class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({super.key});
+
+  final String parentAppName;
+
+   MyStatefulWidget({super.key, required this.parentAppName});
 
   @override
   State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
@@ -12,12 +15,12 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   // Initial text for the Text widget
-  String _displayText = 'Hello, Flutter!';
+  String _displayText = 'welcome';
 
   // Method to change the text when button is pressed
   void _updateText() {
     setState(() {
-      _displayText = 'Text Updated!';
+      _displayText = 'welcome to ${widget.parentAppName} app';
     });
   }
 
