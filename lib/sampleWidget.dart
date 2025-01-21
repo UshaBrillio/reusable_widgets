@@ -28,7 +28,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stateful Widget Example'),
+        title: Text('Reusable Library Example'),
       ),
       body: Center(
         child: Column(
